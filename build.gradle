@@ -5,6 +5,8 @@ buildscript {
         jcenter()
         mavenCentral()
         google()
+        maven {url 'https://plugins.gradle.org/m2'} 
+        maven {url 'https://nexus.web.cern.ch/nexus/content/repositories/public'} 
     }
     dependencies {
         classpath 'com.android.tools.build:gradle:3.2.0'
@@ -16,7 +18,7 @@ buildscript {
 allprojects {
     repositories {
         jcenter()
-        google()
+        google()        
     }
 }
 task clean(type: Delete) {
